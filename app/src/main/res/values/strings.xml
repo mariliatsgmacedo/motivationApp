@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Motivation</string>
+    <string name="activity_message_title">Mensagens</string>
+    <string name="message_button">Mensagem Aleatória</string>
+    <string name="message_title">Crie suas próprias mensagens</string>
+    <string name="message_hint">Digite aqui sua mensagem</string>
+    <string name="message_option">ou</string>
+    <string name="save_button">Salvar</string>
+    <string name="image_tile">imagem principal</string>
+    <string name="see_message">Ver mensagens</string>
+    <string name="required_field">Campo Obrigatório</string>
+    <string name="add_success_message">Mensagem Salva com Sucesso</string>
+    <string name="delete">Deletar</string>
+    <string name="delete_desc">Deletar Mensagem</string>
+
+
+</resources>
