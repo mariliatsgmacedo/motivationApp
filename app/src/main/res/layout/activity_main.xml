@@ -16,16 +16,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/msgButton"
+            app:layout_constraintBottom_toTopOf="@id/toShowRandomMessage"
             android:contentDescription="@string/image_tile" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/msgButton"
+            android:id="@+id/toShowRandomMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:text="@string/message_button"
-            android:layout_marginHorizontal="16dp"
+            android:layout_marginHorizontal="@dimen/margin_default"
             android:layout_marginTop="16dp"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
@@ -45,18 +45,18 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/msgButton"
-            app:layout_constraintBottom_toTopOf="@id/card_main"/>
+            app:layout_constraintTop_toBottomOf="@id/toShowRandomMessage"
+            app:layout_constraintBottom_toTopOf="@id/card_screen_main"/>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_main"
+            android:id="@+id/card_screen_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardBackgroundColor="@color/white_smoke"
             android:layout_marginVertical="8dp"
-            android:layout_marginHorizontal="16dp"
+            android:layout_marginHorizontal="@dimen/margin_default"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/msgOption">
@@ -117,7 +117,7 @@
                         app:cornerRadius="10dp"
                         />
                     <androidx.appcompat.widget.AppCompatTextView
-                        android:id="@+id/listMessage"
+                        android:id="@+id/toShowMessagesSave"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -136,8 +136,6 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

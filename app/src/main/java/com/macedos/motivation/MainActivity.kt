@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         //Btn mensagem aleatoria
-        binding.msgButton.setOnClickListener {
+        binding.toShowRandomMessage.setOnClickListener {
             showMessageRandom()
         }
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Btn para listar minhas mensagens
-        binding.listMessage.setOnClickListener {
+        binding.toShowMessagesSave.setOnClickListener {
             messageListIntent()
         }
 

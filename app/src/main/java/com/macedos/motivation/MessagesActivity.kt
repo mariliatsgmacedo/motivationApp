@@ -26,7 +26,7 @@ class MessagesActivity : AppCompatActivity(), MessageAdapter.MessageListener {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         adapter =  MessageAdapter(messages, this)
 
-        binding.listMessage.adapter = adapter
+        binding.toShowMessagesSave.adapter = adapter
 
 
     }
