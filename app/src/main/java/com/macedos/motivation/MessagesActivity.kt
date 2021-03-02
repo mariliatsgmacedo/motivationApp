@@ -21,6 +21,7 @@ class MessagesActivity : AppCompatActivity(), MessageAdapter.MessageListener {
         messages = intent.getSerializableExtra("messages") as ArrayList<Message>
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_messages)
+
         //Mostrar botão voltar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         adapter =  MessageAdapter(messages, this)

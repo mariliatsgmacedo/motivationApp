@@ -62,8 +62,6 @@ class MainActivity : AppCompatActivity() {
 
         val alertDialog = builder.show()
         alertDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-
-
     }
 
     private fun saveMessage(){
