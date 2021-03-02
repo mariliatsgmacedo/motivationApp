@@ -2,6 +2,6 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/white" />
     <item
-        android:drawable="@drawable/mind_map_pana"
+        android:drawable="@drawable/ic_creative_thinking_animate"
         android:gravity="center" />
 </layer-list>
