@@ -2,9 +2,14 @@ package com.macedos.motivation
 
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.MenuItem
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
 import com.macedos.motivation.databinding.ActivityMessagesBinding
 import com.macedos.motivation.model.Message
@@ -44,6 +49,26 @@ class MessagesActivity : AppCompatActivity(), MessageAdapter.MessageListener {
     }
 
     override fun onDelete(message: Message) {
+        //builder.setTitle, builder.setMessage builder.setOnPositiveListener{dialog, b ->  dialog.dismiss()}
+
+        val builder = AlertDialog.Builder(this)
+        val view = LayoutInflater.from(this).inflate(R.layout.choose_del_message, null)
+        val btnYes = view.findViewById<TextView>(R.id.btn_yes)
+        val btnNo = view.findViewById<TextView>(R.id.btn_no)
+        builder.setView(view)
+        val alert: AlertDialog = builder.show()
+        alert.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        btnYes.setOnClickListener{ deleteOK(message)
+            alert.dismiss()
+        }
+
+        btnNo.setOnClickListener {
+            alert.dismiss()
+        }
+    }
+
+    private fun deleteOK(message: Message){
         messages.remove(message)
         adapter.messages = messages
         adapter.notifyDataSetChanged()

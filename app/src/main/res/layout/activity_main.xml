@@ -98,7 +98,6 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -114,8 +113,7 @@
                         android:layout_gravity="center"
                         android:text="@string/save_button"
                         app:backgroundTint="@color/green"
-                        app:cornerRadius="10dp"
-                        />
+                        app:cornerRadius="10dp" />
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/toShowMessagesSave"
                         android:layout_width="wrap_content"
@@ -128,8 +126,7 @@
                         android:paddingHorizontal="10dp"
                         android:layout_gravity="center"
                         android:text="@string/see_message"
-                        app:cornerRadius="10dp"
-                        />
+                        app:cornerRadius="10dp" />
 
                 </LinearLayout>
 

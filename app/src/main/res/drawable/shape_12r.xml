@@ -7,32 +7,8 @@
                 android:left="1dp"
                 android:right="1dp"
                 android:top="1dp" />
-            <solid android:color="@color/blue"/>
-            <corners android:radius="12dp"/>
-        </shape>
-    </item>
-
-    <item>
-        <shape>
-            <padding
-                android:bottom="1dp"
-                android:left="2dp"
-                android:right="1dp"
-                android:top="2dp" />
-            <solid android:color="@color/blue"/>
-            <corners android:radius="12dp"/>
-        </shape>
-    </item>
-    <item>
-        <shape>
-            <padding
-                android:bottom="1dp"
-                android:left="3dp"
-                android:right="1dp"
-                android:top="3dp" />
             <solid android:color="@color/white"/>
             <corners android:radius="12dp"/>
         </shape>
     </item>
-
 </layer-list>

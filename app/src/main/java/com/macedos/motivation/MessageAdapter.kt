@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -12,8 +13,7 @@ import com.macedos.motivation.model.Message
 //Gerenciar a lista criada
 class MessageAdapter(
         var messages: ArrayList<Message>,
-        private var listener: MessageListener) :
-        RecyclerView.Adapter<MessageAdapter.ViewHolder>() {
+        private var listener: MessageListener) : RecyclerView.Adapter<MessageAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val message: TextView = view.findViewById(R.id.message_random)
@@ -31,8 +31,6 @@ class MessageAdapter(
                 true
             }
         }
-
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

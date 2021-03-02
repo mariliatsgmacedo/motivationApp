@@ -12,6 +12,10 @@
     <string name="add_success_message">Mensagem Salva com Sucesso</string>
     <string name="delete">Deletar</string>
     <string name="delete_desc">Deletar Mensagem</string>
+    <string name="message_btn_del">Você deseja excluir essa mensagem?</string>
+    <string name="confirm_del">SIM</string>
+    <string name="cancel_del">NÃO</string>
+    <string name="image_crash">image_crash</string>
 
 
 </resources>
